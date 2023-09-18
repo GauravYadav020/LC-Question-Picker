@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body onload="myFunction()" style="margin: 0">
+        <div id="loader"></div>
+
+        <div style="display: none" id="myDiv" class="animate-bottom">
+            <h1>Leetcode Question Picker</h1>
+            <div class="difficulty_radio">
+                <input
+                    label="EASY"
+                    type="radio"
+                    value="Easy"
+                    name="difficulty_radio_button"
+                    checked
+                />
+                <input
+                    label="MEDIUM"
+                    type="radio"
+                    value="Medium"
+                    name="difficulty_radio_button"
+                />
+                <input
+                    label="HARD"
+                    type="radio"
+                    value="Hard"
+                    name="difficulty_radio_button"
+                />
+                <input
+                    label="RANDOM"
+                    type="radio"
+                    value="Random"
+                    name="difficulty_radio_button"
+                />
+            </div>
+            <div class="topic_select">
+                <label for="topic">TOPIC:</label>
+                <select name="topic">
+                    <option value="Random">Random</option>
+                    <option value="Array">Array</option>
+                    <option value="String">String</option>
+                    <option value="Math">Math</option>
+                    <option value="Linked List">Linked List</option>
+                    <option value="Stack">Stack</option>
+                    <option value="Queue">Queue</option>
+                    <option value="Hash Table">Hash Table</option>
+                    <option value="Bit Manipulation">Bit Manipulation</option>
+                    <option value="Two Pointers">Two Pointers</option>
+                    <option value="Sliding Window">Sliding Window</option>
+                    <option value="Binary Search">Binary Search</option>
+                    <option value="Tree">Tree</option>
+                    <option value="Binary Tree">Binary Tree</option>
+                    <option value="Binary Search Tree">
+                        Binary Search Tree
+                    </option>
+                    <option value="Heap (Priority Queue)">
+                        Heap / Priority Queue
+                    </option>
+                    <option value="Breadth-First Search">
+                        Breadth-First Search
+                    </option>
+                    <option value="Depth-First Search">
+                        Depth-First Search
+                    </option>
+                    <option value="Trie">Trie</option>
+                    <option value="Segment Tree">Segment Tree</option>
+                    <option value="Graph">Graph</option>
+                    <option value="Topological Sort">Topological Sort</option>
+                    <option value="Union Find">Union Find</option>
+                    <option value="Recursion">Recursion</option>
+                    <option value="Dynamic Programming">
+                        Dynamic Programming
+                    </option>
+                    <option value="Backtracking">Backtracking</option>
+                    <option value="Greedy">Greedy Algorithm</option>
+                </select>
+            </div>
+            <button class="get-question-button">GO</button>
+            <div class="question-card hidden-card">
+                <p id="title" style="margin-right: auto; order: 0"></p>
+                <p id="acRate"></p>
+                <a id="link" href="#" target="_blank">
+                    <img src="./icons/link.png" width="40" height="40" />
+                </a>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
